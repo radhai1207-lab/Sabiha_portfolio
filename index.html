@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabiha — Writer • Author • Content Creator | Words, Written. Stories, Shaped.</title>
+  <meta name="description" content="Digital portfolio of Sabiha: Published author of SCREAM, co-author, compiler, healthcare content creator at Reach Skyline, and English Literature graduate.">
+  <meta name="author" content="Sabiha">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sabiha — Writer • Author • Content Creator">
+  <meta property="og:description" content="From published books and poetry anthologies to healthcare storytelling and digital content, Sabiha explores the many ways words make people pause, feel and connect.">
+  <meta property="og:type" content="website">
+
+  <!-- Editorial Typography: Cormorant Garamond, Playfair Display, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+
+  <!-- Skip to Content for Keyboard Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Paper Grain Overlay -->
+  <div class="paper-grain" aria-hidden="true"></div>
+
+  <!-- Interactive HTML5 Particle Canvas -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- ==========================================================================
+       OPENING CINEMATIC WRITER LOADER
+       ========================================================================== -->
+  <div id="intro-loader" role="dialog" aria-modal="true" aria-label="Welcome animation">
+    <div class="loader-inner">
+      <div class="loader-name-wrap">
+        <span class="loader-name">S</span>
+        <span class="loader-caret"></span>
+      </div>
+
+      <div class="loader-roles">
+        <span>Writer</span>
+        <span>Creator</span>
+        <span>Storyteller</span>
+      </div>
+
+      <p class="loader-status">“Loading a world built with words...”</p>
+
+      <div class="loader-reveal">
+        <p class="loader-ethos">WORDS, WRITTEN. STORIES, SHAPED.</p>
+      </div>
+    </div>
+    <button class="loader-skip" aria-label="Skip introduction animation">Skip intro [Esc]</button>
+  </div>
+
+  <!-- ==========================================================================
+       PAGE WRAPPER
+       ========================================================================== -->
+  <div class="page-wrapper">
+
+    <!-- Sticky Navigation Header -->
+    <header class="site-header">
+      <div class="reading-progress-bar" aria-hidden="true"></div>
+      <div class="container container-wide">
+        <nav class="nav-inner" aria-label="Main Navigation">
+          <a href="#hero" class="nav-brand">
+            <span class="brand-logo">SABIHA</span>
+            <span class="brand-tag">PORTFOLIO / 2026</span>
+          </a>
+
+          <ul class="nav-menu">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#books" class="nav-link">Books</a></li>
+            <li><a href="#recognition" class="nav-link">Milestone</a></li>
+            <li><a href="#content-work" class="nav-link">Work</a></li>
+            <li><a href="#teaching" class="nav-link">Teaching</a></li>
+            <li><a href="#contact" class="btn btn-secondary nav-contact-btn">Let's Connect</a></li>
+          </ul>
+
+          <button class="mobile-nav-toggle" aria-label="Open mobile menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" aria-label="Mobile Navigation">
+      <a href="#about" class="mobile-drawer-link">About</a>
+      <a href="#books" class="mobile-drawer-link">Books & Roles</a>
+      <a href="#recognition" class="mobile-drawer-link">Recognition</a>
+      <a href="#content-work" class="mobile-drawer-link">Content Work</a>
+      <a href="#teaching" class="mobile-drawer-link">Teaching</a>
+      <a href="#contact" class="mobile-drawer-link">Contact</a>
+    </div>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+
+      <!-- ======================================================================
+           HERO SECTION
+           ====================================================================== -->
+      <section id="hero" class="hero">
+        <!-- Floating Subtle Typographic Words -->
+        <div class="hero-floating-words" aria-hidden="true">
+          <span class="floating-word word-stories">Stories</span>
+          <span class="floating-word word-ideas">Ideas</span>
+          <span class="floating-word word-words">Words</span>
+          <span class="floating-word word-voice">Voice</span>
+          <span class="floating-word word-perspective">Perspective</span>
+        </div>
+
+        <div class="container">
+          <div class="hero-inner">
+            <div class="hero-eyebrow">
+              <span>Writer</span>
+              <span class="dot">•</span>
+              <span>Author</span>
+              <span class="dot">•</span>
+              <span>Content Creator</span>
+            </div>
+
+            <h1 class="hero-headline">
+              <span class="headline-line">WORDS, WRITTEN.</span>
+              <span class="headline-line headline-accent">STORIES, SHAPED.</span>
+            </h1>
+
+            <p class="hero-copy">
+              From published books and poetry anthologies to healthcare storytelling and digital content, Sabiha explores the many ways words can make people pause, feel and connect.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#books" class="btn btn-primary">Explore My Work</a>
+              <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+              <span class="hero-editorial-badge">portfolio / 2026</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="editorial-rule">
+
+      <!-- ======================================================================
+           ABOUT / THE STORY BEHIND THE WORDS
+           ====================================================================== -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-statement-wrap">
+              <span class="section-eyebrow">The Story Behind The Words</span>
+              <h2 class="about-statement">
+                Writing was never just a skill.<br>
+                It became a way of seeing.
+              </h2>
+              <p class="about-statement-meta">Sabiha — Literary & Digital Portfolio</p>
+            </div>
+
+            <div class="about-bio-wrap">
+              <p class="about-bio-lead">
+                Sabiha holds a <strong>BA in English Literature</strong>, an academic foundation that grounded her appreciation for syntax, rhythm, critical analysis, and the enduring human impulse to tell stories.
+              </p>
+              <p class="about-bio-body">
+                Her professional path began in education as an <strong>English teacher at Chaitanya Group of Institutions</strong>. In the classroom, she learned how to demystify complex language, command audience attention, and adapt tone to diverse levels of understanding — skills that directly informed her evolution as a writer.
+              </p>
+              <p class="about-bio-body">
+                Expanding into professional content creation with <strong>Reach Skyline</strong>, she brought storytelling rigor to the digital realm. Here, she authored captions, developed narrative content for long-form and short-form videos, and crafted articles and Instagram posts for notable healthcare institutions.
+              </p>
+              <p class="about-bio-body">
+                Parallel to her digital work, Sabiha is an independently published author, co-author, and compiler. Her portfolio spans fiction, poetry, healthcare communication, and creative anthologies.
+              </p>
+
+              <!-- Credentials Strip -->
+              <div class="about-credentials-strip">
+                <span class="credential-pill"><span class="dot"></span> BA English Literature</span>
+                <span class="credential-pill"><span class="dot"></span> Published Author</span>
+                <span class="credential-pill"><span class="dot"></span> Healthcare Content Creator</span>
+                <span class="credential-pill"><span class="dot"></span> Former English Teacher</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           BOOKS SECTION & ROLE VISUALIZATION
+           ====================================================================== -->
+      <section id="books" class="section section-alt">
+        <div class="container">
+          <span class="section-eyebrow">Published Works</span>
+          <h2 class="section-title">WORDS THAT FOUND THEIR WAY INTO PRINT.</h2>
+          <p class="section-subtitle">
+            An editorial shelf of physical and digital publications across mystery suspense, international anthologies, and women's poetry curation.
+          </p>
+
+          <div class="books-shelf">
+            <!-- Book 01: SCREAM (Author) -->
+            <article class="book-card" data-role="author">
+              <div class="book-card-header">
+                <span class="book-number">BOOK 01</span>
+                <span class="book-role-badge">AUTHOR</span>
+              </div>
+
+              <div class="book-cover-container">
+                <div class="book-spine-mockup">
+                  <img
+                    src="https://d1n4jo9i5084wt.cloudfront.net/cover/1392709/56016720resize_cover_464130.png"
+                    alt="Official book cover of Scream by Sabiha"
+                    class="book-real-cover"
+                    loading="lazy">
+                </div>
+              </div>
+
+              <div class="book-card-body">
+                <h3 class="book-title">SCREAM</h3>
+                <span class="book-genre">Mystery Thriller</span>
+                <p class="book-desc">
+                  Her published mystery thriller, SCREAM, marked one of Sabiha's milestones as an author. A suspenseful investigation driven by observation, deduction, and psychological tension.
+                </p>
+                <p class="book-publisher-note">Published through Notion Press</p>
+                <a
+                  href="https://notionpress.com/in/read/scream-1392709"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary">
+                  READ / VIEW BOOK
+                </a>
+              </div>
+            </article>
+
+            <!-- Book 02: A MUSING MOTLEY (Co-Author) -->
+            <article class="book-card" data-role="co-author">
+              <div class="book-card-header">
+                <span class="book-number">BOOK 02</span>
+                <span class="book-role-badge">CO-AUTHOR</span>
+              </div>
+
+              <div class="book-cover-container">
+                <div class="book-spine-mockup">
+                  <div class="book-typo-jacket jacket-musing">
+                    <span class="jacket-top-meta">International Anthology</span>
+                    <h4 class="jacket-title">A MUSING<br>MOTLEY</h4>
+                    <span class="jacket-bottom-meta">Co-Authored by Sabiha</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="book-card-body">
+                <h3 class="book-title">A MUSING MOTLEY</h3>
+                <span class="book-genre">International Anthology</span>
+                <p class="book-desc">
+                  An anthology bringing together writers from different countries, creating a shared collection of voices and perspectives across borders and cultures.
+                </p>
+                <p class="book-publisher-note">Available on Amazon</p>
+                <a
+                  href="https://amzn.in/d/0foGmGvs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary">
+                  VIEW ON AMAZON
+                </a>
+              </div>
+            </article>
+
+            <!-- Book 03: NIBS OF FIRE (Compiler) -->
+            <article class="book-card" data-role="compiler">
+              <div class="book-card-header">
+                <span class="book-number">BOOK 03</span>
+                <span class="book-role-badge">COMPILER</span>
+              </div>
+
+              <div class="book-cover-container">
+                <div class="book-spine-mockup">
+                  <div class="book-typo-jacket jacket-nibs">
+                    <span class="jacket-top-meta">Women's Poetry Collection</span>
+                    <h4 class="jacket-title">NIBS OF<br>FIRE</h4>
+                    <span class="jacket-bottom-meta">Compiled by Sabiha</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="book-card-body">
+                <h3 class="book-title">NIBS OF FIRE</h3>
+                <span class="book-genre">Women's Poetry Collection</span>
+                <p class="book-desc">
+                  Sabiha served as the compiler of a poetry collection bringing together poetry written by women, celebrating vulnerability, resonance, and fierce expression.
+                </p>
+                <p class="book-publisher-note">Available on Amazon</p>
+                <a
+                  href="https://amzn.in/d/0cXz9Jqt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary">
+                  VIEW ON AMAZON
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Book Role Visualization -->
+          <div class="book-roles-visualizer">
+            <div class="roles-header">
+              <span class="section-eyebrow">Creative Role Architecture</span>
+              <h3 class="section-title" style="font-size: 2.2rem;">THREE WAYS OF ENGAGING WITH THE PAGE</h3>
+            </div>
+
+            <div class="roles-grid">
+              <div class="role-card">
+                <span class="role-card-name">AUTHOR</span>
+                <p class="role-card-quote">“I created the story.”</p>
+                <p class="role-card-subtext">
+                  Conceiving characters, architecting psychological stakes, and driving the mystery of SCREAM from first draft to print publication.
+                </p>
+              </div>
+
+              <div class="role-card">
+                <span class="role-card-name">CO-AUTHOR</span>
+                <p class="role-card-quote">“I shared the page.”</p>
+                <p class="role-card-subtext">
+                  Collaborating across international boundaries in A MUSING MOTLEY, contributing personal literary perspective to a mosaic of global voices.
+                </p>
+              </div>
+
+              <div class="role-card">
+                <span class="role-card-name">COMPILER</span>
+                <p class="role-card-quote">“I brought voices together.”</p>
+                <p class="role-card-subtext">
+                  Curating and orchestrating women's poetry in NIBS OF FIRE — providing an editorial bridge between independent poets and a broader readership.
+                </p>
+              </div>
+            </div>
+
+            <p class="roles-disclaimer">
+              * The statements above represent an editorial interpretation of Sabiha's multifaceted authorial roles.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           EZHUDHUNGA / RECOGNITION SECTION
+           ====================================================================== -->
+      <section id="recognition" class="section">
+        <div class="container">
+          <span class="section-eyebrow">Milestones & Honors</span>
+          <h2 class="section-title">A MOMENT WORTH REMEMBERING.</h2>
+          <p class="section-subtitle">
+            Through the NGO literary event "EZHUDHUNGA", celebrating 100 authors' works, Sabiha's writing earned notable public recognition and honors.
+          </p>
+
+          <div class="milestones-timeline">
+            <!-- Step 01 -->
+            <div class="milestone-step">
+              <span class="milestone-number">01</span>
+              <h3 class="milestone-title">100 AUTHORS</h3>
+              <span class="milestone-sub">EZHUDHUNGA CELEBRATION</span>
+              <p class="milestone-detail">
+                Participated in the distinguished NGO literary gathering celebrating the creative works and potential of 100 selected authors.
+              </p>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="milestone-step">
+              <span class="milestone-number">02</span>
+              <h3 class="milestone-title">SCREAM</h3>
+              <span class="milestone-sub">PUBLISHED & UNVEILED</span>
+              <p class="milestone-detail">
+                Her book SCREAM was published through the event, formally establishing her voice in mystery and suspense fiction.
+              </p>
+            </div>
+
+            <!-- Step 03 -->
+            <div class="milestone-step">
+              <span class="milestone-number">03</span>
+              <h3 class="milestone-title">YOUNG AUTHOR</h3>
+              <span class="milestone-sub">AWARD CEREMONY</span>
+              <p class="milestone-detail">
+                Conferred the Young Author Award during the ceremony, with the notable involvement and presence of ISRO scientist Gokul.
+              </p>
+            </div>
+
+            <!-- Step 04 -->
+            <div class="milestone-step">
+              <span class="milestone-number">04</span>
+              <h3 class="milestone-title">HONORARY</h3>
+              <span class="milestone-sub">MEDAL & CERTIFICATE</span>
+              <p class="milestone-detail">
+                Received an honorary award, medal, and official certificate presented by the grandson of Dr. A.P.J. Abdul Kalam.
+              </p>
+            </div>
+          </div>
+
+          <!-- Milestone Spotlight Photo Feature -->
+          <div class="milestone-spotlight">
+            <div class="milestone-photo-frame">
+              <img
+                src="assets/sabiha-ezhudhunga-milestone.jpg"
+                alt="Sabiha holding the published book SCREAM, the Dr. A.P.J. Abdul Kalam honor medal, and the Young Author Award certificate"
+                class="milestone-photo"
+                loading="lazy">
+              <div class="milestone-badge-overlay">
+                <span>EZHUDHUNGA 100 AUTHORS • MILESTONE MOMENT</span>
+              </div>
+            </div>
+
+            <div class="milestone-spotlight-content">
+              <span class="section-eyebrow">A Milestone in One Frame</span>
+              <h3 class="milestone-spotlight-title">Book, Medal & Certificate.</h3>
+              <p class="milestone-spotlight-lead">
+                Captured in a single defining milestone: Sabiha holding her published mystery thriller <em>SCREAM</em>, the honorary gold medal featuring Dr. A.P.J. Abdul Kalam, and her official Young Author Award certificate.
+              </p>
+              <div class="milestone-spotlight-notes">
+                <div class="spotlight-note-item">
+                  <span class="note-bullet">✦</span>
+                  <div>
+                    <strong>Published Book:</strong>
+                    <span><em>SCREAM</em> — published and honored through the Ezhudhunga 100 authors initiative.</span>
+                  </div>
+                </div>
+                <div class="spotlight-note-item">
+                  <span class="note-bullet">✦</span>
+                  <div>
+                    <strong>Honorary Gold Medal:</strong>
+                    <span>Conferred by the grandson of Dr. A.P.J. Abdul Kalam.</span>
+                  </div>
+                </div>
+                <div class="spotlight-note-item">
+                  <span class="note-bullet">✦</span>
+                  <div>
+                    <strong>Young Author Award:</strong>
+                    <span>Presented in the presence and recognition of ISRO scientist Gokul.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           PROFESSIONAL CONTENT CREATION ("FROM STORIES TO SCREENS")
+           ====================================================================== -->
+      <section id="content-work" class="section section-alt">
+        <div class="container">
+          <span class="section-eyebrow">Professional Content Practice</span>
+          <h2 class="section-title">FROM STORIES TO SCREENS.</h2>
+          <p class="section-subtitle">
+            Her writing journey extends beyond books — into digital storytelling, brand communication and content created for real audiences.
+          </p>
+
+          <!-- Reach Skyline Banner -->
+          <div class="content-agency-banner">
+            <div class="agency-header">
+              <h3 class="agency-name">Reach Skyline</h3>
+              <span class="agency-role">CONTENT CREATOR / WRITER</span>
+            </div>
+            <p class="agency-summary">
+              Through Reach Skyline, Sabiha created captions and content for long-form and short-form videos, blogs and Instagram posts for notable healthcare institutions.
+            </p>
+          </div>
+
+          <!-- Content Ecosystem Grid -->
+          <div class="content-ecosystem-grid">
+            <div class="ecosystem-card">
+              <span class="ecosystem-badge">Scripts & Narratives</span>
+              <h4 class="ecosystem-title">LONG-FORM VIDEO CONTENT</h4>
+              <p class="ecosystem-desc">
+                Educational video scripts with structured pacing, patient-centric phrasing, and clear narrative arcs.
+              </p>
+            </div>
+
+            <div class="ecosystem-card">
+              <span class="ecosystem-badge">Reels & Vertical Video</span>
+              <h4 class="ecosystem-title">SHORT-FORM VIDEO CONTENT</h4>
+              <p class="ecosystem-desc">
+                High-retention hooks and concise storytelling structured for modern mobile attention spans.
+              </p>
+            </div>
+
+            <div class="ecosystem-card">
+              <span class="ecosystem-badge">Specialized Writing</span>
+              <h4 class="ecosystem-title">HEALTHCARE CONTENT</h4>
+              <p class="ecosystem-desc">
+                Empathetic, accurate, and accessible health communication translating intricate medical topics into reassuring clarity.
+              </p>
+            </div>
+
+            <div class="ecosystem-card">
+              <span class="ecosystem-badge">Editorial Articles</span>
+              <h4 class="ecosystem-title">BLOGS</h4>
+              <p class="ecosystem-desc">
+                In-depth articles combining informative research with conversational readability and SEO awareness.
+              </p>
+            </div>
+
+            <div class="ecosystem-card">
+              <span class="ecosystem-badge">Social Media Architecture</span>
+              <h4 class="ecosystem-title">INSTAGRAM POSTS</h4>
+              <p class="ecosystem-desc">
+                Visual copy, carousel architectures, and slide narratives that spark reader engagement and saves.
+              </p>
+            </div>
+
+            <div class="ecosystem-card">
+              <span class="ecosystem-badge">Micro-Copy</span>
+              <h4 class="ecosystem-title">CAPTIONS</h4>
+              <p class="ecosystem-desc">
+                Arresting opening lines and thoughtful invitations to conversation that bridge images with ideas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           TEACHING EXPERIENCE
+           ====================================================================== -->
+      <section id="teaching" class="section">
+        <div class="container">
+          <span class="section-eyebrow">Pedagogy & Foundations</span>
+          <h2 class="section-title">WORDS ARE ALSO SOMETHING WE TEACH.</h2>
+
+          <div class="teaching-card">
+            <div class="teaching-intro">
+              <h3 class="teaching-institution">Chaitanya Group of Institutions</h3>
+              <p class="teaching-role-tag">ENGLISH TEACHER</p>
+              <p class="teaching-summary-text">
+                Teaching English strengthened Sabiha's ability to understand language from the ground up — not merely as words on a page, but as living instruments of communication, clarity, and human connection.
+              </p>
+            </div>
+
+            <div class="teaching-skills-grid">
+              <div class="teaching-skill-item">
+                <h4 class="skill-name">Communication</h4>
+                <p class="skill-desc">Guiding discussions and conveying concepts with clarity and confidence.</p>
+              </div>
+
+              <div class="teaching-skill-item">
+                <h4 class="skill-name">Language & Syntax</h4>
+                <p class="skill-desc">A deep grounding in grammatical structure, cadence, and expressive range.</p>
+              </div>
+
+              <div class="teaching-skill-item">
+                <h4 class="skill-name">Audience Understanding</h4>
+                <p class="skill-desc">Recognizing how different minds absorb ideas and adjusting pace accordingly.</p>
+              </div>
+
+              <div class="teaching-skill-item">
+                <h4 class="skill-name">Clarity & Simplicity</h4>
+                <p class="skill-desc">Translating intricate thoughts into crisp, accessible expressions.</p>
+              </div>
+
+              <div class="teaching-skill-item">
+                <h4 class="skill-name">Storytelling</h4>
+                <p class="skill-desc">Using narrative illustrations to make lessons resonant and memorable.</p>
+              </div>
+
+              <div class="teaching-skill-item">
+                <h4 class="skill-name">Presentation</h4>
+                <p class="skill-desc">Mastering tone, emphasis, and presence to keep readers engaged.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           WRITING PHILOSOPHY
+           ====================================================================== -->
+      <section class="philosophy-section">
+        <div class="container">
+          <blockquote class="philosophy-quote">
+            “I don't just write to fill a page.<br>
+            <span class="accent">I write to make someone pause.”</span>
+          </blockquote>
+
+          <p class="philosophy-subtext">
+            A writer's work is not only about words.<br>
+            It is about what those words leave behind.
+          </p>
+
+          <p class="philosophy-disclaimer">
+            Portfolio Tagline • Sabiha 2026
+          </p>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           BEHIND THE WORDS / PERSONAL SECTION
+           ====================================================================== -->
+      <section id="behind" class="section">
+        <div class="container">
+          <div class="behind-grid">
+            <div class="portrait-frame-wrapper">
+              <div class="portrait-container">
+                <img
+                  src="assets/sabiha-portrait.jpg"
+                  alt="Portrait of Sabiha — Writer, Author and Content Creator"
+                  class="portrait-img"
+                  loading="lazy">
+                <div class="portrait-editorial-tag">
+                  <span>Sabiha • Author & Creator</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="behind-content">
+              <span class="section-eyebrow">Behind The Words</span>
+              <h2 class="behind-name">SABIHA</h2>
+              <p class="behind-roles-tag">Writer • Author • Content Creator</p>
+
+              <p class="behind-bio">
+                An English Literature graduate with a multifaceted writing background spanning published fiction (SCREAM), international anthology collaboration (A Musing Motley), and poetry compilation (Nibs of Fire).
+              </p>
+              <p class="behind-bio">
+                Her professional experience combines classroom pedagogy at Chaitanya Group of Institutions with digital content creation at Reach Skyline, where she produced healthcare storytelling across videos, blogs, and social platforms.
+              </p>
+
+              <div class="behind-quick-facts">
+                <div class="fact-item">
+                  <span class="fact-label">Academic Degree</span>
+                  <span class="fact-value">BA English Literature</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Authorial Works</span>
+                  <span class="fact-value">Author, Co-Author, Compiler</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Content Focus</span>
+                  <span class="fact-value">Healthcare, Video, Blogs</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-label">Foundation</span>
+                  <span class="fact-value">English Pedagogy & Storytelling</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           CONTACT SECTION
+           ====================================================================== -->
+      <section id="contact" class="section section-alt">
+        <div class="container container-narrow">
+          <div class="contact-card">
+            <span class="section-eyebrow">Start A Conversation</span>
+            <h2 class="contact-headline">LET'S CREATE SOMETHING WORTH READING.</h2>
+            <p class="contact-subtext">
+              For collaborations, writing opportunities, content projects or simply a conversation about words.
+            </p>
+
+            <div class="contact-channels">
+              <div class="contact-channel-item">
+                <span class="channel-label">Email Inquiries</span>
+                <a href="mailto:sabiha1556sabiha1556@gmail.com" class="channel-val">sabiha1556sabiha1556@gmail.com</a>
+              </div>
+
+              <div class="contact-channel-item">
+                <span class="channel-label">Direct Phone</span>
+                <a href="tel:6385139912" class="channel-val">+91 6385139912</a>
+              </div>
+            </div>
+
+            <div class="contact-actions">
+              <a href="mailto:sabiha1556sabiha1556@gmail.com" class="btn btn-primary">EMAIL SABIHA</a>
+              <a href="tel:6385139912" class="btn btn-secondary">CALL SABIHA</a>
+              <button type="button" class="btn btn-secondary js-copy-email">Copy Email Address</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner">
+          <h2 class="footer-name">SABIHA</h2>
+          <p class="footer-roles">WRITER • AUTHOR • CONTENT CREATOR</p>
+          <p class="footer-ethos">“Words, written. Stories, shaped.”</p>
+          <p class="footer-copy">© 2026 Sabiha. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

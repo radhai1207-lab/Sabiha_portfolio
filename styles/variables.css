@@ -1,0 +1,64 @@
+/**
+ * Design Tokens & Editorial Theme Variables for SABIHA
+ * Bright ivory, deep charcoal, muted burgundy/wine accents, subtle gold details.
+ */
+
+:root {
+  /* Editorial Color Palette */
+  --bg-primary: #FAF7F2;          /* Warm Ivory / Off-White */
+  --bg-secondary: #F3ECE2;        /* Soft Cream / Beige */
+  --bg-tertiary: #EAE2D5;         /* Pale Parchment */
+  --bg-card: #FFFFFF;             /* Crisp Crisp Card Surface */
+  --bg-card-soft: #FDFBF8;        /* Soft Paper White */
+
+  --text-primary: #1C1B1A;        /* Deep Charcoal Text */
+  --text-secondary: #585049;      /* Refined Editorial Slate */
+  --text-muted: #8B8177;          /* Muted Taupe */
+  --text-light: #A49A90;          /* Subdued Meta Text */
+
+  --accent-wine: #732C3A;         /* Sophisticated Muted Wine / Burgundy */
+  --accent-wine-hover: #5A202C;   /* Deep Burgundy Shade */
+  --accent-wine-soft: #F6ECEE;    /* Delicate Blush / Wine Wash */
+  --accent-wine-border: #E4CED2;  /* Pale Rose Wine Outline */
+
+  --accent-gold: #B89666;         /* Subtle Antique Gold */
+  --accent-gold-soft: #FAF5EC;    /* Warm Gold Mist */
+  --accent-gold-border: #DFCBB0;  /* Fine Gold Accent Line */
+
+  --accent-lavender: #ECE6E8;     /* Muted Warm Lavender Accent */
+
+  --border-subtle: rgba(28, 27, 26, 0.08);
+  --border-medium: rgba(28, 27, 26, 0.14);
+  --border-strong: rgba(28, 27, 26, 0.28);
+
+  /* Typography Scales */
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', SFMono-Regular, Consolas, monospace;
+
+  /* Elevation Shadows (Soft & Diffuse, Paper-like) */
+  --shadow-paper: 0 4px 20px -2px rgba(28, 27, 26, 0.04), 0 2px 6px -1px rgba(28, 27, 26, 0.03);
+  --shadow-lift: 0 12px 32px -4px rgba(28, 27, 26, 0.07), 0 4px 12px -2px rgba(28, 27, 26, 0.04);
+  --shadow-book: 0 18px 45px -8px rgba(115, 44, 58, 0.12), 0 6px 18px -4px rgba(28, 27, 26, 0.06);
+
+  /* Spacing System */
+  --spacing-xs: 0.5rem;    /* 8px */
+  --spacing-sm: 1rem;      /* 16px */
+  --spacing-md: 1.5rem;    /* 24px */
+  --spacing-lg: 2.5rem;    /* 40px */
+  --spacing-xl: 4rem;      /* 64px */
+  --spacing-2xl: 6.5rem;   /* 104px */
+  --spacing-3xl: 9rem;     /* 144px */
+
+  /* Layout Containers */
+  --container-max: 1240px;
+  --container-narrow: 980px;
+  --container-wide: 1400px;
+  --container-padding: clamp(1.25rem, 4vw, 3.5rem);
+
+  /* Transitions */
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-fast: 0.2s var(--ease-editorial);
+  --transition-normal: 0.35s var(--ease-editorial);
+  --transition-slow: 0.6s var(--ease-editorial);
+}
